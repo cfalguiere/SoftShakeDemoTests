@@ -1,0 +1,473 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DCCD5AC11430A5C400CB1095 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCCD5AC01430A5C400CB1095 /* UIKit.framework */; };
+		DCCD5AC31430A5C400CB1095 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCCD5AC21430A5C400CB1095 /* Foundation.framework */; };
+		DCCD5AC51430A5C400CB1095 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCCD5AC41430A5C400CB1095 /* CoreGraphics.framework */; };
+		DCCD5ACB1430A5C400CB1095 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DCCD5AC91430A5C400CB1095 /* InfoPlist.strings */; };
+		DCCD5ACD1430A5C400CB1095 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DCCD5ACC1430A5C400CB1095 /* main.m */; };
+		DCCD5AD11430A5C400CB1095 /* ShakeConverter2AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DCCD5AD01430A5C400CB1095 /* ShakeConverter2AppDelegate.m */; };
+		DCCD5AD31430A5C400CB1095 /* ShakeConverter2ViewController.h in Resources */ = {isa = PBXBuildFile; fileRef = DCCD5AD21430A5C400CB1095 /* ShakeConverter2ViewController.h */; };
+		DCCD5AD51430A5C400CB1095 /* ShakeConverter2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCCD5AD41430A5C400CB1095 /* ShakeConverter2ViewController.m */; };
+		DCCD5AD81430A5C400CB1095 /* ShakeConverter2ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCCD5AD61430A5C400CB1095 /* ShakeConverter2ViewController_iPhone.xib */; };
+		DCCD5ADB1430A5C400CB1095 /* ShakeConverter2ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCCD5AD91430A5C400CB1095 /* ShakeConverter2ViewController_iPad.xib */; };
+		DCCD5AE31430A5C400CB1095 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCCD5AE21430A5C400CB1095 /* SenTestingKit.framework */; };
+		DCCD5AE41430A5C400CB1095 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCCD5AC01430A5C400CB1095 /* UIKit.framework */; };
+		DCCD5AE51430A5C400CB1095 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCCD5AC21430A5C400CB1095 /* Foundation.framework */; };
+		DCCD5AE61430A5C400CB1095 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCCD5AC41430A5C400CB1095 /* CoreGraphics.framework */; };
+		DCCD5AEE1430A5C400CB1095 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DCCD5AEC1430A5C400CB1095 /* InfoPlist.strings */; };
+		DCCD5AF01430A5C400CB1095 /* ShakeConverter2Tests.h in Resources */ = {isa = PBXBuildFile; fileRef = DCCD5AEF1430A5C400CB1095 /* ShakeConverter2Tests.h */; };
+		DCCD5AF21430A5C400CB1095 /* ShakeConverter2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = DCCD5AF11430A5C400CB1095 /* ShakeConverter2Tests.m */; };
+		DCCD5B021430A87700CB1095 /* CurrencyConverterService.m in Sources */ = {isa = PBXBuildFile; fileRef = DCCD5B011430A87700CB1095 /* CurrencyConverterService.m */; };
+		DCCD5B031430D29900CB1095 /* CurrencyConverterService.m in Sources */ = {isa = PBXBuildFile; fileRef = DCCD5B011430A87700CB1095 /* CurrencyConverterService.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DCCD5AE71430A5C400CB1095 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCCD5AB31430A5C400CB1095 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCCD5ABB1430A5C400CB1095;
+			remoteInfo = ShakeConverter2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DCCD5ABC1430A5C400CB1095 /* ShakeConverter2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShakeConverter2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCCD5AC01430A5C400CB1095 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DCCD5AC21430A5C400CB1095 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DCCD5AC41430A5C400CB1095 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DCCD5AC81430A5C400CB1095 /* ShakeConverter2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ShakeConverter2-Info.plist"; sourceTree = "<group>"; };
+		DCCD5ACA1430A5C400CB1095 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DCCD5ACC1430A5C400CB1095 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DCCD5ACE1430A5C400CB1095 /* ShakeConverter2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ShakeConverter2-Prefix.pch"; sourceTree = "<group>"; };
+		DCCD5ACF1430A5C400CB1095 /* ShakeConverter2AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShakeConverter2AppDelegate.h; sourceTree = "<group>"; };
+		DCCD5AD01430A5C400CB1095 /* ShakeConverter2AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShakeConverter2AppDelegate.m; sourceTree = "<group>"; };
+		DCCD5AD21430A5C400CB1095 /* ShakeConverter2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShakeConverter2ViewController.h; sourceTree = "<group>"; };
+		DCCD5AD41430A5C400CB1095 /* ShakeConverter2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShakeConverter2ViewController.m; sourceTree = "<group>"; };
+		DCCD5AD71430A5C400CB1095 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ShakeConverter2ViewController_iPhone.xib; sourceTree = "<group>"; };
+		DCCD5ADA1430A5C400CB1095 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ShakeConverter2ViewController_iPad.xib; sourceTree = "<group>"; };
+		DCCD5AE11430A5C400CB1095 /* ShakeConverter2Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShakeConverter2Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCCD5AE21430A5C400CB1095 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		DCCD5AEB1430A5C400CB1095 /* ShakeConverter2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ShakeConverter2Tests-Info.plist"; sourceTree = "<group>"; };
+		DCCD5AED1430A5C400CB1095 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DCCD5AEF1430A5C400CB1095 /* ShakeConverter2Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShakeConverter2Tests.h; sourceTree = "<group>"; };
+		DCCD5AF11430A5C400CB1095 /* ShakeConverter2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShakeConverter2Tests.m; sourceTree = "<group>"; };
+		DCCD5B001430A87700CB1095 /* CurrencyConverterService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrencyConverterService.h; sourceTree = "<group>"; };
+		DCCD5B011430A87700CB1095 /* CurrencyConverterService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrencyConverterService.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DCCD5AB91430A5C400CB1095 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCCD5AC11430A5C400CB1095 /* UIKit.framework in Frameworks */,
+				DCCD5AC31430A5C400CB1095 /* Foundation.framework in Frameworks */,
+				DCCD5AC51430A5C400CB1095 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCCD5ADD1430A5C400CB1095 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCCD5AE31430A5C400CB1095 /* SenTestingKit.framework in Frameworks */,
+				DCCD5AE41430A5C400CB1095 /* UIKit.framework in Frameworks */,
+				DCCD5AE51430A5C400CB1095 /* Foundation.framework in Frameworks */,
+				DCCD5AE61430A5C400CB1095 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DCCD5AB11430A5C400CB1095 = {
+			isa = PBXGroup;
+			children = (
+				DCCD5AC61430A5C400CB1095 /* ShakeConverter2 */,
+				DCCD5AE91430A5C400CB1095 /* ShakeConverter2Tests */,
+				DCCD5ABF1430A5C400CB1095 /* Frameworks */,
+				DCCD5ABD1430A5C400CB1095 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DCCD5ABD1430A5C400CB1095 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DCCD5ABC1430A5C400CB1095 /* ShakeConverter2.app */,
+				DCCD5AE11430A5C400CB1095 /* ShakeConverter2Tests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DCCD5ABF1430A5C400CB1095 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DCCD5AC01430A5C400CB1095 /* UIKit.framework */,
+				DCCD5AC21430A5C400CB1095 /* Foundation.framework */,
+				DCCD5AC41430A5C400CB1095 /* CoreGraphics.framework */,
+				DCCD5AE21430A5C400CB1095 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DCCD5AC61430A5C400CB1095 /* ShakeConverter2 */ = {
+			isa = PBXGroup;
+			children = (
+				DCCD5ACF1430A5C400CB1095 /* ShakeConverter2AppDelegate.h */,
+				DCCD5AD01430A5C400CB1095 /* ShakeConverter2AppDelegate.m */,
+				DCCD5AD21430A5C400CB1095 /* ShakeConverter2ViewController.h */,
+				DCCD5AD41430A5C400CB1095 /* ShakeConverter2ViewController.m */,
+				DCCD5AD61430A5C400CB1095 /* ShakeConverter2ViewController_iPhone.xib */,
+				DCCD5AD91430A5C400CB1095 /* ShakeConverter2ViewController_iPad.xib */,
+				DCCD5AC71430A5C400CB1095 /* Supporting Files */,
+				DCCD5B001430A87700CB1095 /* CurrencyConverterService.h */,
+				DCCD5B011430A87700CB1095 /* CurrencyConverterService.m */,
+			);
+			path = ShakeConverter2;
+			sourceTree = "<group>";
+		};
+		DCCD5AC71430A5C400CB1095 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DCCD5AC81430A5C400CB1095 /* ShakeConverter2-Info.plist */,
+				DCCD5AC91430A5C400CB1095 /* InfoPlist.strings */,
+				DCCD5ACC1430A5C400CB1095 /* main.m */,
+				DCCD5ACE1430A5C400CB1095 /* ShakeConverter2-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DCCD5AE91430A5C400CB1095 /* ShakeConverter2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				DCCD5AEF1430A5C400CB1095 /* ShakeConverter2Tests.h */,
+				DCCD5AF11430A5C400CB1095 /* ShakeConverter2Tests.m */,
+				DCCD5AEA1430A5C400CB1095 /* Supporting Files */,
+			);
+			path = ShakeConverter2Tests;
+			sourceTree = "<group>";
+		};
+		DCCD5AEA1430A5C400CB1095 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DCCD5AEB1430A5C400CB1095 /* ShakeConverter2Tests-Info.plist */,
+				DCCD5AEC1430A5C400CB1095 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DCCD5ABB1430A5C400CB1095 /* ShakeConverter2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCCD5AF51430A5C400CB1095 /* Build configuration list for PBXNativeTarget "ShakeConverter2" */;
+			buildPhases = (
+				DCCD5AB81430A5C400CB1095 /* Sources */,
+				DCCD5AB91430A5C400CB1095 /* Frameworks */,
+				DCCD5ABA1430A5C400CB1095 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShakeConverter2;
+			productName = ShakeConverter2;
+			productReference = DCCD5ABC1430A5C400CB1095 /* ShakeConverter2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DCCD5AE01430A5C400CB1095 /* ShakeConverter2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCCD5AF81430A5C400CB1095 /* Build configuration list for PBXNativeTarget "ShakeConverter2Tests" */;
+			buildPhases = (
+				DCCD5ADC1430A5C400CB1095 /* Sources */,
+				DCCD5ADD1430A5C400CB1095 /* Frameworks */,
+				DCCD5ADE1430A5C400CB1095 /* Resources */,
+				DCCD5ADF1430A5C400CB1095 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCCD5AE81430A5C400CB1095 /* PBXTargetDependency */,
+			);
+			name = ShakeConverter2Tests;
+			productName = ShakeConverter2Tests;
+			productReference = DCCD5AE11430A5C400CB1095 /* ShakeConverter2Tests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DCCD5AB31430A5C400CB1095 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = DCCD5AB61430A5C400CB1095 /* Build configuration list for PBXProject "ShakeConverter2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DCCD5AB11430A5C400CB1095;
+			productRefGroup = DCCD5ABD1430A5C400CB1095 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DCCD5ABB1430A5C400CB1095 /* ShakeConverter2 */,
+				DCCD5AE01430A5C400CB1095 /* ShakeConverter2Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DCCD5ABA1430A5C400CB1095 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCCD5ACB1430A5C400CB1095 /* InfoPlist.strings in Resources */,
+				DCCD5AD31430A5C400CB1095 /* ShakeConverter2ViewController.h in Resources */,
+				DCCD5AD81430A5C400CB1095 /* ShakeConverter2ViewController_iPhone.xib in Resources */,
+				DCCD5ADB1430A5C400CB1095 /* ShakeConverter2ViewController_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCCD5ADE1430A5C400CB1095 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCCD5AEE1430A5C400CB1095 /* InfoPlist.strings in Resources */,
+				DCCD5AF01430A5C400CB1095 /* ShakeConverter2Tests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DCCD5ADF1430A5C400CB1095 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DCCD5AB81430A5C400CB1095 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCCD5ACD1430A5C400CB1095 /* main.m in Sources */,
+				DCCD5AD11430A5C400CB1095 /* ShakeConverter2AppDelegate.m in Sources */,
+				DCCD5AD51430A5C400CB1095 /* ShakeConverter2ViewController.m in Sources */,
+				DCCD5B021430A87700CB1095 /* CurrencyConverterService.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCCD5ADC1430A5C400CB1095 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCCD5AF21430A5C400CB1095 /* ShakeConverter2Tests.m in Sources */,
+				DCCD5B031430D29900CB1095 /* CurrencyConverterService.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DCCD5AE81430A5C400CB1095 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCCD5ABB1430A5C400CB1095 /* ShakeConverter2 */;
+			targetProxy = DCCD5AE71430A5C400CB1095 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DCCD5AC91430A5C400CB1095 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCCD5ACA1430A5C400CB1095 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DCCD5AD61430A5C400CB1095 /* ShakeConverter2ViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCCD5AD71430A5C400CB1095 /* en */,
+			);
+			name = ShakeConverter2ViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		DCCD5AD91430A5C400CB1095 /* ShakeConverter2ViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCCD5ADA1430A5C400CB1095 /* en */,
+			);
+			name = ShakeConverter2ViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+		DCCD5AEC1430A5C400CB1095 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCCD5AED1430A5C400CB1095 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DCCD5AF31430A5C400CB1095 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DCCD5AF41430A5C400CB1095 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DCCD5AF61430A5C400CB1095 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ShakeConverter2/ShakeConverter2-Prefix.pch";
+				INFOPLIST_FILE = "ShakeConverter2/ShakeConverter2-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DCCD5AF71430A5C400CB1095 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ShakeConverter2/ShakeConverter2-Prefix.pch";
+				INFOPLIST_FILE = "ShakeConverter2/ShakeConverter2-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		DCCD5AF91430A5C400CB1095 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ShakeConverter2.app/ShakeConverter2";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ShakeConverter2/ShakeConverter2-Prefix.pch";
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				INFOPLIST_FILE = "ShakeConverter2Tests/ShakeConverter2Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		DCCD5AFA1430A5C400CB1095 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ShakeConverter2.app/ShakeConverter2";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ShakeConverter2/ShakeConverter2-Prefix.pch";
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				INFOPLIST_FILE = "ShakeConverter2Tests/ShakeConverter2Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DCCD5AB61430A5C400CB1095 /* Build configuration list for PBXProject "ShakeConverter2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCCD5AF31430A5C400CB1095 /* Debug */,
+				DCCD5AF41430A5C400CB1095 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCCD5AF51430A5C400CB1095 /* Build configuration list for PBXNativeTarget "ShakeConverter2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCCD5AF61430A5C400CB1095 /* Debug */,
+				DCCD5AF71430A5C400CB1095 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCCD5AF81430A5C400CB1095 /* Build configuration list for PBXNativeTarget "ShakeConverter2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCCD5AF91430A5C400CB1095 /* Debug */,
+				DCCD5AFA1430A5C400CB1095 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DCCD5AB31430A5C400CB1095 /* Project object */;
+}
