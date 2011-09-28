@@ -48,9 +48,9 @@ end
 desc("Launch test")
 task :test do
   puts "TEST application #{APPNAME}"
-  command = "xcodebuild -project \"#{APPNAME}.xcodeproj\" -target \"#{APPNAME}Tests\" -sdk iphonesimulator -configuration \"Release\" CODE_SIGN_IDENTITY=\"#{CONFIG['sign']}\" TEST_HOST="
+  command = "xcodebuild -project \"#{APPNAME}.xcodeproj\" -target \"#{APPNAME}Tests\" -sdk iphonesimulator -configuration \"Release\" CODE_SIGN_IDENTITY=\"#{CONFIG['sign']}\" TEST_HOST= $LOG_FILTER_PIPE"
   #command = "xcodebuild -project \"#{APPNAME}.xcodeproj\" -target \"#{APPNAME}Tests\" -sdk iphonesimulator -configuration \"Release\" CODE_SIGN_IDENTITY=\"#{CONFIG['sign']}\" TEST_HOST=build/Release-iphoneos/#{APPNAME}.app/#{APPNAME}"
-  sh "#{command} build  #{LOG_FILTER_PIPE}"
+  sh "#{command} build"
 end
 
 abbreviated_commit_hash = `git log -1 --pretty=format:%h`
@@ -75,7 +75,7 @@ file JSON_FILE => DIR do
   file = File.new(JSON_FILE, 'w')
   data = {:version => "#{CONFIG['CFBundleVersion']}-#{abbreviated_commit_hash}", 
     :icon => CONFIG['CFBundleIconFiles'][0], 
-    :title => NAME,
+    :title => APPNAME,
     :osVersion => CONFIG['osVersion'],
     :devices => devices(CONFIG['devices_family'])}
   file.write JSON data
@@ -99,16 +99,14 @@ end
 
 IPA_FILE = "#{DIR}/#{APPNAME}.ipa"
 file IPA_FILE => :ipa_files do
-  archive = "/usr/bin/xcrun -sdk iphoneos PackageApplication build/Release-iphoneos/#{APPNAME}.app -o #{File.expand_path(IPA_FILE)} --embed #{PROVPROFILE_PATH}"
+  puts "building IPA for application #{APPNAME}"
+  archive = "/usr/bin/xcrun -sdk iphoneos PackageApplication build/Release-iphoneos/#{APPNAME}.app -o #{File.expand_path(IPA_FILE)} --embed #{PROVPROFILE_PATH} $LOG_FILTER_PIPE"
   sh archive
 end
 
 multitask :generate_files => [JSON_FILE, PLIST_FILE, IPA_FILE]
 
 desc("Create tarball suitable for deployment")
-#TARBALL = "#{APPNAME}-#{CONFIG['CFBundleVersion']}.tgz"
-#task :package => TARBALL
-#file TARBALL => :generate_files do
 task :package  => :generate_files do
   puts "PACKAGE application #{APPNAME}"
   copy "#{APPNAME}/iTunesArtwork.jpg", DIR
@@ -118,4 +116,12 @@ task :package  => :generate_files do
   users.close
 end
 
+desc("Deploy on '#{CONFIG['server']}'")
+task :deploy => [:clean, :build, :package] do
+  keys = CONFIG['ssh_path']
+  sh "chmod 600 #{keys}"
+  host = "#{CONFIG['user']}@#{SERVER}"
+  www_path = CONFIG['www_path']
+  sh "SoftwareFactory/publish.bash #{APPNAME} #{CONFIG['CFBundleVersion']} #{host} #{keys}"
+end
 

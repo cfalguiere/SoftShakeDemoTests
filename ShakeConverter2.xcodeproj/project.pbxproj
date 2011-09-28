@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DCC66AAF1433647600DC0F84 /* Icon-57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = DCC66AAE1433647600DC0F84 /* Icon-57x57.png */; };
+		DCC66AB11433648B00DC0F84 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = DCC66AB01433648B00DC0F84 /* Default.png */; };
+		DCC66AB31433649A00DC0F84 /* Icon-72x72.png in Resources */ = {isa = PBXBuildFile; fileRef = DCC66AB21433649A00DC0F84 /* Icon-72x72.png */; };
+		DCC66AB5143364E700DC0F84 /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = DCC66AB4143364E700DC0F84 /* Default-Landscape~ipad.png */; };
 		DCCD5AC11430A5C400CB1095 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCCD5AC01430A5C400CB1095 /* UIKit.framework */; };
 		DCCD5AC31430A5C400CB1095 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCCD5AC21430A5C400CB1095 /* Foundation.framework */; };
 		DCCD5AC51430A5C400CB1095 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCCD5AC41430A5C400CB1095 /* CoreGraphics.framework */; };
@@ -39,6 +43,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DCC66AAE1433647600DC0F84 /* Icon-57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-57x57.png"; sourceTree = "<group>"; };
+		DCC66AB01433648B00DC0F84 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		DCC66AB21433649A00DC0F84 /* Icon-72x72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72x72.png"; sourceTree = "<group>"; };
+		DCC66AB4143364E700DC0F84 /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
 		DCCD5ABC1430A5C400CB1095 /* ShakeConverter2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShakeConverter2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCCD5AC01430A5C400CB1095 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DCCD5AC21430A5C400CB1095 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -91,6 +99,10 @@
 		DCCD5AB11430A5C400CB1095 = {
 			isa = PBXGroup;
 			children = (
+				DCC66AB4143364E700DC0F84 /* Default-Landscape~ipad.png */,
+				DCC66AB21433649A00DC0F84 /* Icon-72x72.png */,
+				DCC66AB01433648B00DC0F84 /* Default.png */,
+				DCC66AAE1433647600DC0F84 /* Icon-57x57.png */,
 				DCCD5AC61430A5C400CB1095 /* ShakeConverter2 */,
 				DCCD5AE91430A5C400CB1095 /* ShakeConverter2Tests */,
 				DCCD5ABF1430A5C400CB1095 /* Frameworks */,
@@ -235,6 +247,10 @@
 				DCCD5AD31430A5C400CB1095 /* ShakeConverter2ViewController.h in Resources */,
 				DCCD5AD81430A5C400CB1095 /* ShakeConverter2ViewController_iPhone.xib in Resources */,
 				DCCD5ADB1430A5C400CB1095 /* ShakeConverter2ViewController_iPad.xib in Resources */,
+				DCC66AAF1433647600DC0F84 /* Icon-57x57.png in Resources */,
+				DCC66AB11433648B00DC0F84 /* Default.png in Resources */,
+				DCC66AB31433649A00DC0F84 /* Icon-72x72.png in Resources */,
+				DCC66AB5143364E700DC0F84 /* Default-Landscape~ipad.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
