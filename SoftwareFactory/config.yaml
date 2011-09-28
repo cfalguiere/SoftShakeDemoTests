@@ -3,7 +3,7 @@ app_name: 'ShakeConverter2'
 # edit provisioning profile name
 provisioning_profile: 'SoftShakeDemo'
 
-ci_folder: '.'
+ci_folder: '../privatebuild'
 
 server: '10.28.0.38'
 user: 'valtech'
