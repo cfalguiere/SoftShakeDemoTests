@@ -29,8 +29,6 @@ cd $CI_FOLDER
 
 log_section "PROVISIONING ${BUNDLE_VERSION}"
 
-echo INFO_NAME $INFO_NAME
-
 /usr/libexec/PlistBuddy -c "Set :CFBundleVersion '${BUNDLE_VERSION}'" $INFO_NAME
 log "${INFO_NAME} CFBundleVersion has been set to ${BUNDLE_VERSION}"
 
