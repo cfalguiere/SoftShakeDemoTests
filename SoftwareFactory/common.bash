@@ -2,7 +2,7 @@
 
 ### Common Initializations
 
-PROJECT_NAME=`grep "^name:" SoftwareFactory/config.yaml | sed "s/name: '\(.*\)'/\1/"`
+PROJECT_NAME=`grep "^app_name:" SoftwareFactory/config.yaml | sed "s/app_name: '\(.*\)'/\1/"`
 INFO_NAME=${PROJECT_NAME}/${PROJECT_NAME}-Info.Plist
 CI_FOLDER=`grep "^ci_folder:" SoftwareFactory/config.yaml | sed "s/ci_folder: '\(.*\)'/\1/"`
 

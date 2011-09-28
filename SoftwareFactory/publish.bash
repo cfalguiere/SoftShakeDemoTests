@@ -20,7 +20,7 @@ KEY_PATH=$4
 
 ### publish process
 
-log "$SCRIPT_NAME: Publising $BUNDLE_VERSION ..."
+log "$SCRIPT_NAME: Provisioning $BUNDLE_VERSION ..."
 
 SOURCE_DIR=${CI_FOLDER}/pkg/${BUNDLE_VERSION}
 chmod -R a-wx,a+rX,u+w $SOURCE_DIR

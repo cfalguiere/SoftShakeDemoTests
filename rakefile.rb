@@ -119,6 +119,7 @@ end
 desc("Deploy on '#{CONFIG['server']}'")
 task :deploy => [:clean, :build, :package] do
   keys = CONFIG['ssh_path']
+  puts "--> #{keys}"
   sh "chmod 600 #{keys}"
   host = "#{CONFIG['user']}@#{SERVER}"
   www_path = CONFIG['www_path']
