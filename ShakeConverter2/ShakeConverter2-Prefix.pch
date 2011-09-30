@@ -12,3 +12,11 @@
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
 #endif
+
+#import <TargetConditionals.h>
+#if TARGET_IPHONE_SIMULATOR
+#ifndef __IPHONE_OS_VERSION_MIN_REQUIRED
+#define __IPHONE_OS_VERSION_MIN_REQUIRED 040100
+#endif
+#endif
+
