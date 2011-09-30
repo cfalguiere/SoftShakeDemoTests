@@ -8,15 +8,3 @@
 #warning "This project uses features only available in iOS SDK 4.0 and later."
 #endif
 
-#ifdef __OBJC__
-    #import <UIKit/UIKit.h>
-    #import <Foundation/Foundation.h>
-#endif
-
-#import <TargetConditionals.h>
-#if TARGET_IPHONE_SIMULATOR
-#ifndef __IPHONE_OS_VERSION_MIN_REQUIRED
-#define __IPHONE_OS_VERSION_MIN_REQUIRED 040200
-#endif
-#endif
-
