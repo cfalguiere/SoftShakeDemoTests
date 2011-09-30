@@ -13,8 +13,6 @@
 int main(int argc, char *argv[])
 {
     int retVal = 0;
-    @autoreleasepool {
-        retVal = UIApplicationMain(argc, argv, nil, NSStringFromClass([ShakeConverter2AppDelegate class]));
-    }
+    retVal = UIApplicationMain(argc, argv, nil, NSStringFromClass([ShakeConverter2AppDelegate class]));
     return retVal;
 }

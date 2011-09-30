@@ -12,8 +12,8 @@
 
 @interface ShakeConverter2AppDelegate : UIResponder <UIApplicationDelegate>
 
-@property (strong, nonatomic) UIWindow *window;
+@property (nonatomic, retain) UIWindow *window;
 
-@property (strong, nonatomic) ShakeConverter2ViewController *viewController;
+@property (nonatomic, retain) ShakeConverter2ViewController *viewController;
 
 @end
